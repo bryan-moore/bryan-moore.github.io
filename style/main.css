@@ -1,0 +1,7 @@
+@import 'reset.css';
+body{-webkit-text-size-adjust:none;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+.nav{background:#fff;position:fixed;top:0;width:100%;z-index:9;}
+.intro{background:#333;}
+.about{background:#ce4d27;}
+.work{background:#263647;}
+.contact{background:#1abc9c;}
