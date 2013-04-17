@@ -1,6 +1,11 @@
 $(document).ready(function() {
 
-	var newHeight = $(window).height();
-	$('.slide').css('height', newHeight )
+	$('.slide').css('height',  $(window).height() );
 
+});
+
+$(window).resize(function() {
+
+	$('.slide').css('height', $(window).height());
+	
 });

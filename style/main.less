@@ -12,10 +12,26 @@ body {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 9;
+	height: 75px;
+	z-index: 10;
+	ul {
+		li {
+			display: inline;
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+	
 }
 .intro {
-	background: #333;
+	background: url('../images/background.jpg') no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/background.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/background.jpg', sizingMethod='scale')";
 }
 .about {
 	background: #ce4d27;

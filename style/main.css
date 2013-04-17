@@ -1,7 +1,1 @@
-@import 'reset.css';
-body{-webkit-text-size-adjust:none;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
-.nav{background:#fff;position:fixed;top:0;width:100%;z-index:9;}
-.intro{background:#333;}
-.about{background:#ce4d27;}
-.work{background:#263647;}
-.contact{background:#1abc9c;}
+@import 'reset.css';body{-webkit-text-size-adjust:none;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}.nav{background:#fff;position:fixed;top:0;width:100%;height:75px;z-index:10}.nav ul li{display:inline}.nav ul li a{text-decoration:none}.intro{background:url('../images/background.jpg') no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/background.jpg',sizingMethod='scale');-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/background.jpg', sizingMethod='scale')"}.about{background:#ce4d27}.work{background:#263647}.contact{background:#1abc9c}
