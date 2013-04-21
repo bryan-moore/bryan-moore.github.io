@@ -1,1 +1,64 @@
-@import 'reset.css';body{-webkit-text-size-adjust:none;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}.nav{background:#fff;position:fixed;top:0;width:100%;height:75px;z-index:10}.nav ul li{display:inline}.nav ul li a{text-decoration:none}.intro{background:url('../images/background.jpg') no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/background.jpg',sizingMethod='scale');-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/background.jpg', sizingMethod='scale')"}.about{background:#ce4d27}.work{background:#263647}.contact{background:#1abc9c}
+@import 'reset.css';
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400);
+body {
+  -webkit-text-size-adjust: none;
+  webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.nav {
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0px 2px 5px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0px 2px 5px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 2px 5px rgba(50, 50, 50, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  z-index: 10;
+}
+.nav ul {
+  padding: 25px 15px 0;
+  float: right;
+}
+.nav ul li {
+  display: inline;
+  padding: 0 3px;
+}
+.nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #888888;
+}
+.nav ul li .current {
+  color: #333333;
+}
+.intro {
+  background: url('../images/background.jpg') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/background.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/background.jpg', sizingMethod='scale')";
+}
+.about {
+  background: #ce4d27;
+  height: 800px;
+}
+.work {
+  background: #263647;
+  height: 900px;
+}
+.contact {
+  background: #1abc9c;
+  height: 1000px;
+}
+.footer {
+  height: 70px;
+}
