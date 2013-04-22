@@ -1,33 +1,33 @@
 $(document).ready(function() {
 
-	$('.intro').css('height',$(window).height());
+	updateSize(15);
 
-	$('a#intro').addClass('current');
-
+	$(".nano").nanoScroller();
+	
 	$('.nav a').click(function() {
 		$('.nav a').removeClass('current');
 		$(this).addClass('current');
 	});
 
 	$('#intro').click(function() {
-		$.scrollTo('.intro',500);	
+		$(".nano").nanoScroller({ scrollTo: $('.intro') });	
 	});
 	$('#about').click(function() {
-		$.scrollTo('.about',500);	
+		$(".nano").nanoScroller({ scrollTo: $('.about') });	
 	});
 	$('#work').click(function() {
-		$.scrollTo('.work',500);	
+		$(".nano").nanoScroller({ scrollTo: $('.work') });	
 	});
 	$('#contact').click(function() {
-		$.scrollTo('.contact',500);	
-	});
-
-	$('.work').waypoint(function() {
-		/*$('.nav a').removeClass('current');
-		$('.nav #intro').addClass('current');*/
-		console.log('work top');
+		$(".nano").nanoScroller({ scrollTo: $('.contact') });	
 	});
 	/*
+	$('.work').waypoint(function() {
+		$('.nav a').removeClass('current');
+		$('.nav #intro').addClass('current');
+		console.log('work top');
+	});
+	
 	$('.about').waypoint(function() {
 		$('.nav a').removeClass('current');
 		$('.nav #about').addClass('current');
@@ -37,11 +37,11 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-
-	$('.slide').css('height', $(window).height());
-	
-	if( $('.intro').attr(position.top) = 0 ) {
-		console.log('top');
-	}
-
+	updateSize(0);
 });
+
+function updateSize(widthOffset) {
+	$('.intro').css('height',$(window).height());
+	$('#scroller-container').css('height', $(window).height());
+	$('#scroller-container').css('width', $(window).width() + widthOffset);
+}

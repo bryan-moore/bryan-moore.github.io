@@ -9,6 +9,14 @@ body {
 	font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 	font-family: 'Source Sans Pro', sans-serif;
+	
+	background: url('../images/background.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/background.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/background.jpg', sizingMethod='scale')";
 }
 .nav {
 	background-color: rgba(255,255,255,0.8);
@@ -39,14 +47,17 @@ body {
 	}
 	
 }
+
+#scroller-container {
+	
+}
+.intro, .about, .work, .contact, .footer {
+	z-index: 5;
+	width: 100%;
+}
 .intro {
-	background: url('../images/background.jpg') no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/background.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/background.jpg', sizingMethod='scale')";
+	background-color: rgba(255,255,255,0.2);
+	height: 100%	
 }
 .about {
 	background: @orange;
