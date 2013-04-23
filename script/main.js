@@ -1,26 +1,20 @@
 $(document).ready(function() {
 
-	updateSize(15);
+	updateSize();
 
-	$(".nano").nanoScroller();
+	$("html").niceScroll();
+	$('#intro').addClass('current');
 	
 	$('.nav a').click(function() {
 		$('.nav a').removeClass('current');
 		$(this).addClass('current');
 	});
 
-	$('#intro').click(function() {
-		$(".nano").nanoScroller({ scrollTo: $('.intro') });	
-	});
-	$('#about').click(function() {
-		$(".nano").nanoScroller({ scrollTo: $('.about') });	
-	});
-	$('#work').click(function() {
-		$(".nano").nanoScroller({ scrollTo: $('.work') });	
-	});
-	$('#contact').click(function() {
-		$(".nano").nanoScroller({ scrollTo: $('.contact') });	
-	});
+	scrollToHash('#intro','.intro');
+	scrollToHash('#about','.about');
+	scrollToHash('#work','.work');
+	scrollToHash('#contact','.contact');
+		
 	/*
 	$('.work').waypoint(function() {
 		$('.nav a').removeClass('current');
@@ -36,12 +30,19 @@ $(document).ready(function() {
 
 });
 
+function scrollToHash(trigger, destination) {
+	$(trigger).click(function() {
+		$(window).scrollTo(destination,'slow');	
+	});
+}
+
 $(window).resize(function() {
-	updateSize(0);
+	updateSize();
 });
 
-function updateSize(widthOffset) {
+function updateSize() {
 	$('.intro').css('height',$(window).height());
-	$('#scroller-container').css('height', $(window).height());
-	$('#scroller-container').css('width', $(window).width() + widthOffset);
+	$('.intro').css('width',$(window).width());
+	//$('#scroller-container').css('height', $(window).height());
+	//$('#scroller-container').css('width', $(window).width());
 }
