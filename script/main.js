@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	updateSize();
 
-	$("html").niceScroll();
+	$("html").niceScroll({ cursorborder:"none", scrollspeed:"50" });
 	$('#intro').addClass('current');
 	
 	$('.nav a').click(function() {
