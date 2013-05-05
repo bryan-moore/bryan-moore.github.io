@@ -26,22 +26,28 @@ body {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	height: 75px;
+	height: 50px;
 	z-index: 10;
+	overflow: hidden;
 
 	.title {
 		float: left;
 		text-transform: uppercase;
-		h1 {
-			font-size: 32px;
+		a {
+			text-decoration: none;
 		}
-		h2 {
-			font-size: 14px;
+		h1 {
+			font-size: 27px;
+			font-weight: 200;
+			color: #333;
+			position: relative;
+			top: 6px;
+			left: 12px;
 		}
 	}
 
 	.nav {
-		padding: 25px 15px 0;
+		padding: 15px 15px 0;
 		float: right;
 		li {
 			display: inline;
@@ -65,11 +71,14 @@ body {
 }
 
 .intro, .about, .work, .contact, .footer {
-	z-index: 5;
-	//width: 100%;
+	z-index: 10;
 }
 .intro {
-	height: 100%	
+	height: 100%;
+	p {
+		text-align: center;
+		padding-top: 50%;
+	}	
 }
 .about {
 	background: @orange;

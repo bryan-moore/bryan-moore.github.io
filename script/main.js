@@ -1,8 +1,13 @@
 $(document).ready(function() {
 
 	updateSize();
+	$("body").scrollTop(0);
 
-	$("html").niceScroll({ cursorborder:"none", scrollspeed:"50" });
+	$("html").niceScroll({ 
+		cursorborder:"none", 
+		scrollspeed:"35",
+		cursorborderradius:"0px" 
+	});
 	$('#intro').addClass('current');
 	
 	$('.nav a').click(function() {
@@ -14,19 +19,26 @@ $(document).ready(function() {
 	scrollToHash('#about','.about');
 	scrollToHash('#work','.work');
 	scrollToHash('#contact','.contact');
-		
-	/*
-	$('.work').waypoint(function() {
+	
+	var wayOffset = '50%';	
+	
+	$('.íntro').waypoint(function() {
+		console.log('intro');
 		$('.nav a').removeClass('current');
-		$('.nav #intro').addClass('current');
-		console.log('work top');
-	});
+		$('#intro').addClass('current');
+	}, { offset: '-50%' });
 	
 	$('.about').waypoint(function() {
-		$('.nav a').removeClass('current');
-		$('.nav #about').addClass('current');
-		console.log('about top');
-	});*/
+		console.log('about');
+	}, { offset: wayOffset });
+
+	$('.work').waypoint(function() {
+		console.log('work');
+	}, { offset: wayOffset });
+
+	$('.contact').waypoint(function() {
+		console.log('contact');
+	}, { offset: wayOffset });
 
 });
 
@@ -45,4 +57,9 @@ function updateSize() {
 	$('.intro').css('width',$(window).width());
 	//$('#scroller-container').css('height', $(window).height());
 	//$('#scroller-container').css('width', $(window).width());
+}
+
+function logoLink() {
+	location.reload();
+	$("body").scrollTop(0);
 }
