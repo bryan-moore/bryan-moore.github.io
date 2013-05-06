@@ -20,26 +20,36 @@ $(document).ready(function() {
 	scrollToHash('#work','.work');
 	scrollToHash('#contact','.contact');
 	
-	var wayOffset = '50%';	
-	
-	$('.íntro').waypoint(function() {
-		console.log('intro');
+	$('.intro').waypoint(function() {
 		$('.nav a').removeClass('current');
 		$('#intro').addClass('current');
 	}, { offset: '-50%' });
-	
+
 	$('.about').waypoint(function() {
-		console.log('about');
-	}, { offset: wayOffset });
+		$('.nav a').removeClass('current');
+		$('#about').addClass('current');
+	}, { offset: '50%' });
+
+	$('.about').waypoint(function() {
+		$('.nav a').removeClass('current');
+		$('#about').addClass('current');
+	}, { offset: '-50%' });
 
 	$('.work').waypoint(function() {
-		console.log('work');
-	}, { offset: wayOffset });
+		$('.nav a').removeClass('current');
+		$('#work').addClass('current');
+	}, { offset: '50%' });
+
+	$('.work').waypoint(function() {
+		$('.nav a').removeClass('current');
+		$('#work').addClass('current');
+	}, { offset: '-50%' });
 
 	$('.contact').waypoint(function() {
-		console.log('contact');
-	}, { offset: wayOffset });
-
+		$('.nav a').removeClass('current');
+		$('#contact').addClass('current');
+	}, { offset: '50%' });
+	
 });
 
 function scrollToHash(trigger, destination) {
