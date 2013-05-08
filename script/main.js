@@ -15,6 +15,22 @@ $(document).ready(function() {
 		$(this).addClass('current');
 	});
 
+	$('.mobile-nav').click(function() {
+		
+		if($('.title').is(':visible')) {
+			$('.title').fadeToggle('fast', function() {
+				$('.nav').fadeToggle('fast');
+			});
+			$('.mobile-nav').fadeTo('fast',.2);
+		}
+		else {
+			$('.nav').fadeToggle('fast', function() {
+				$('.title').fadeToggle('fast');
+			});
+			$('.mobile-nav').fadeTo('fast',.8);
+		}
+	});
+
 	scrollToHash('#intro','.intro');
 	scrollToHash('#about','.about');
 	scrollToHash('#work','.work');

@@ -61,6 +61,20 @@ body {
 .header .nav li .current {
   color: #333333;
 }
+.header .mobile-nav {
+  display: none;
+  float: right;
+  height: 50px;
+  width: 50px;
+  background: url('../images/menu_icon.png');
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-size: 30px;
+  opacity: 0.8;
+}
+.header .mobile-nav:hover {
+  cursor: pointer;
+}
 .intro,
 .about,
 .work,
@@ -100,14 +114,11 @@ body {
   font-size: 12px;
 }
 @media screen and (max-width: 480px) {
-  .header {
-    background: url('../images/menu_icon.png'), rgba(255, 255, 255, 0.8);
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: 97% 10px;
-  }
   .header .nav {
     display: none;
-    float: none;
+    float: left;
+  }
+  .header .mobile-nav {
+    display: block;
   }
 }
