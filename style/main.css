@@ -30,6 +30,7 @@ body {
   overflow: hidden;
 }
 .header .title {
+  display: block;
   float: left;
   text-transform: uppercase;
 }
