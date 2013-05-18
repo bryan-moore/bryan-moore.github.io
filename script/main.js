@@ -11,8 +11,8 @@ $(document).ready(function() {
 	$('#intro').addClass('current');
 	
 	$('.nav a').click(function() {
-		$('.nav a').removeClass('current');
-		$(this).addClass('current');
+		//$('.nav a').removeClass('current');
+		//$(this).addClass('current');
 	});
 
 	$('.mobile-nav').click(function() {
