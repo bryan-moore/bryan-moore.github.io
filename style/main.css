@@ -9,16 +9,16 @@ body {
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-family: 'Source Sans Pro', sans-serif;
-  background: url('../images/background.jpg') no-repeat fixed 100% 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  /*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/background.jpg', sizingMethod='scale');
+  /*background: url('../images/background.jpg') no-repeat fixed 100% 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/background.jpg', sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/background.jpg', sizingMethod='scale')";*/
 
 }
-.header {
+header {
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: 0px 2px 5px rgba(50, 50, 50, 0.5);
   -moz-box-shadow: 0px 2px 5px rgba(50, 50, 50, 0.5);
@@ -30,15 +30,15 @@ body {
   z-index: 10;
   overflow: hidden;
 }
-.header .title {
+header .title {
   display: block;
   float: left;
   text-transform: uppercase;
 }
-.header .title a {
+header .title a {
   text-decoration: none;
 }
-.header .title h1 {
+header .title h1 {
   font-size: 27px;
   font-weight: 200;
   color: #333;
@@ -46,25 +46,25 @@ body {
   top: 6px;
   left: 12px;
 }
-.header .nav {
+header nav {
   display: block;
   padding: 15px 15px 0;
   float: right;
 }
-.header .nav li {
+header nav li {
   display: inline;
   padding: 0 3px;
 }
-.header .nav li a {
+header nav li a {
   text-decoration: none;
   font-size: 16px;
   text-transform: uppercase;
   color: #888888;
 }
-.header .nav li .current {
+header nav li .current {
   color: #333333;
 }
-.header .mobile-nav {
+header .mobile-nav {
   display: none;
   float: right;
   height: 50px;
@@ -75,7 +75,7 @@ body {
   background-size: 30px;
   opacity: 0.8;
 }
-.header .mobile-nav:hover {
+header .mobile-nav:hover {
   cursor: pointer;
 }
 .intro,

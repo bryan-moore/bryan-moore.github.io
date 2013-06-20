@@ -37,7 +37,7 @@ $(document).ready(function() {
 	scrollToHash('#contact','.contact');
 	
 	$('.intro').waypoint(function() {
-		$('.nav a').removeClass('current');
+		$('nav a').removeClass('current');
 		$('#intro').addClass('current');
 	}, { offset: '-50%' });
 
