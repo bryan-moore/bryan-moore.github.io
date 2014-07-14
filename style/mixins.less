@@ -2,10 +2,17 @@
 
 @lightgrey: #888;
 @darkgrey: #333;
+@lighttext: #e1e1e1;
 @orange: #ce4d27;
 @darkblue: #263647;
 @aqua: #1abc9c;
 
+.transition(@prop:all, @duration:0.2s, @ease:ease-out) {
+    -webkit-transition: @prop @duration @ease;
+    -moz-transition: @prop @duration @ease;
+    -o-transition: @prop @duration @ease;
+    transition: @prop @duration @ease;
+}
 .gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
     background: @color;
     background: -webkit-gradient(linear,
