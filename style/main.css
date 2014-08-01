@@ -87,5 +87,10 @@ h3 {
   
 }
 @media screen and (max-width: 480px) {
-  
+  html body {
+    margin: 15px 15px;
+  }
+  html body .main-content {
+    margin: 0 0;
+  }
 }
