@@ -8,7 +8,11 @@
   html body {
     margin: 15px 15px;
   }
+  html body .theme-change {
+    margin: 0 0 15px 0;
+  }
   html body .main-content {
     margin: 0 0;
+    padding: 15px;
   }
 }

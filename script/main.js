@@ -1,3 +1,7 @@
 $(document).ready(function() {
-    $('.main-content').addClass('boom');
+
+    $('.theme-change').on('click', function(){
+        $('html').toggleClass('dark');
+    });
+
 });
