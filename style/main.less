@@ -58,9 +58,12 @@ html {
             color: @verylightgrey;
 
             &:hover {
-                background-color: @verylightgrey;
+
+            }
+            &:active {
+                /*background-color: @verylightgrey;
                 border-color: @verylightgrey;
-                color: @darkishgrey;
+                color: @darkishgrey;*/
             }
         }
     }
@@ -77,10 +80,11 @@ html {
         line-height: 14px;
         text-decoration: none;
 
-        &:hover {
-            background-color: @darkgrey;
+        &:active, &:focus {
+            outline: none;
+            /*background-color: @darkgrey;
             border-color: @darkgrey;
-            color: @white;
+            color: @white;*/
         }
     }
 }

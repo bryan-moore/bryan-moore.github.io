@@ -52,10 +52,11 @@ html.dark .link {
   border: 1px solid #f5f5f5;
   color: #f5f5f5;
 }
-html.dark .link:hover {
-  background-color: #f5f5f5;
-  border-color: #f5f5f5;
-  color: #222222;
+html.dark .link:active {
+  /*background-color: @verylightgrey;
+                border-color: @verylightgrey;
+                color: @darkishgrey;*/
+
 }
 html .link {
   display: inline-block;
@@ -71,10 +72,13 @@ html .link {
   line-height: 14px;
   text-decoration: none;
 }
-html .link:hover {
-  background-color: #333333;
-  border-color: #333333;
-  color: #ffffff;
+html .link:active,
+html .link:focus {
+  outline: none;
+  /*background-color: @darkgrey;
+            border-color: @darkgrey;
+            color: @white;*/
+
 }
 h1 {
   font-size: 24px;
